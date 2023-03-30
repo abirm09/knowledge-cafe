@@ -1,10 +1,12 @@
 import "./App.css";
+import Header from "./Components/Header/Header";
 
 function App() {
   return (
-    <div className="App">
-      <h2 className="bg-red-300">This is project page</h2>
-    </div>
+    <>
+      <Header />
+      <h2 className="bg-red-300 mt-5">This is project page</h2>
+    </>
   );
 }
 
