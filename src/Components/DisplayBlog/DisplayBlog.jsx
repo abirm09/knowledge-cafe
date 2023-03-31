@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
-const DisplayBlog = ({ blogContent }) => {
+const DisplayBlog = ({ blogContent, markAsReadHandler, bookMarkHandler }) => {
   const {
     id,
     authorName,
@@ -12,7 +12,7 @@ const DisplayBlog = ({ blogContent }) => {
     readTime,
   } = blogContent;
   return (
-    <div className="mx-auto max-w-[845px] mb-10">
+    <div className="mx-auto max-w-[845px] mb-5 mt-5">
       <figure>
         <img src={blogCover} alt={blogTitle} className="rounded-lg w-full" />
       </figure>
@@ -35,18 +35,25 @@ const DisplayBlog = ({ blogContent }) => {
             <p className="font-medium text-slate-600 text-xl">
               {readTime} min read
             </p>
-            <button className="p-5 active:scale-90 hover:bg-red-100 rounded-lg transition-all text-xl">
+            <button
+              onClick={() => bookMarkHandler(id, blogTitle)}
+              className="p-5 active:scale-90 hover:bg-red-100 rounded-lg transition-all text-xl"
+            >
               <FontAwesomeIcon icon={faBookmark} />
             </button>
           </div>
         </div>
         <div>
           <h2 className="font-bold text-4xl">{blogTitle}</h2>
-          <button className="text-purple-500 font-semibold underline pt-4">
+          <button
+            onClick={() => markAsReadHandler(readTime)}
+            className="text-purple-500 font-semibold underline pt-4"
+          >
             Mark as read
           </button>
         </div>
       </div>
+      <hr className="mt-5 border-[1.5px] border-slate-500" />
     </div>
   );
 };
