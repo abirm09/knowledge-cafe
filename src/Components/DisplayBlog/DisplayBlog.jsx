@@ -47,7 +47,7 @@ const DisplayBlog = ({ blogContent, markAsReadHandler, bookMarkHandler }) => {
           <h2 className="font-bold text-4xl">{blogTitle}</h2>
           <button
             onClick={() => markAsReadHandler(readTime)}
-            className="text-purple-500 font-semibold underline pt-4"
+            className="text-purple-500 font-semibold my-5 underline rounded-md p-4 transition-all hover:bg-slate-200 active:scale-90 active:bg-slate-300"
           >
             Mark as read
           </button>
