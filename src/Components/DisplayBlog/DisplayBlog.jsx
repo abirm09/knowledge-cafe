@@ -40,6 +40,7 @@ const DisplayBlog = ({ blogContent, markAsReadHandler, bookMarkHandler }) => {
             <button
               onClick={() => bookMarkHandler(id, blogTitle)}
               className="p-5 active:scale-90 hover:bg-red-100 rounded-lg transition-all text-xl"
+              title="BookMark"
             >
               <FontAwesomeIcon icon={faBookmark} />
             </button>
