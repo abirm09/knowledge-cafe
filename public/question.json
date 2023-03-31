@@ -6,5 +6,13 @@
   {
     "question": "How does useState work?",
     "answer": "useState is an builtin react hook.IT allows to add state in functional component in react. useState return two array element.One is a variable and another one is a function. We usually use this function to update the value of the returned variable.If we call the returned function and pass a valid value to the function then it will set this value to the returned variable.And we can do this repeatedly. "
+  },
+  {
+    "question": "Purpose of useEffect other than fetching data.",
+    "answer": "useEffect is mainly used for fetching data. But it can be use for many other purpose also. Some of them are:;It can be used to update animations,update styles or classes.And can be use to upadte page title dynamically.It also use to add or remove event listeners to the window,document or other elements in our applications."
+  },
+  {
+    "question": "How Does React work?",
+    "answer": "useEffect is mainly used for fetching data. But it can be use for many other purpose also. Some of them are:;It can be used to update animations,update styles or classes.And can be use to upadte page title dynamically.It also use to add or remove event listeners to the window,document or other elements in our applications."
   }
 ]
