@@ -17,7 +17,7 @@
     "readTime": 12,
     "authorName": "Campbell Blair",
     "blogTitle": "How to become a good programmer.",
-    "publishData": "12 jan 2023"
+    "publishData": "12 Jan, 2023"
   },
   {
     "id": "6425ad8f1723fb1f3c685d3b",
@@ -27,7 +27,7 @@
     "readTime": 10,
     "authorName": "Simone Cummings",
     "blogTitle": "How to use latest AI technology.",
-    "publishData": "29 Feb 2023"
+    "publishData": "29 Feb, 2023"
   },
   {
     "id": "6425ad8f4526f5b011934d42",
@@ -37,6 +37,6 @@
     "readTime": 8,
     "authorName": "Vega Calhoun",
     "blogTitle": "How to make bright future as a programmer.",
-    "publishData": "26 Jan 2023"
+    "publishData": "26 Jan, 2023"
   }
 ]
