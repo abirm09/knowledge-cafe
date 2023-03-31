@@ -1,14 +1,14 @@
 import "./App.css";
-import Blog from "./Components/Blog/Blog";
+import BlogPost from "./Components/BlogPost/BlogPost";
 import Header from "./Components/Header/Header";
-import QuestionAns from "./Components/QuestionAns/QuestionAns";
+import Blog from "./Components/QuestionAns/Blog";
 
 function App() {
   return (
     <>
       <Header />
+      <BlogPost />
       <Blog />
-      <QuestionAns />
     </>
   );
 }

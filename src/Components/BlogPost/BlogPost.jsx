@@ -4,7 +4,7 @@ import TimeSpentAndBookmark from "../TimeSpentAndBookmark/TimeSpentAndBookmark";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Blog = () => {
+const BlogPost = () => {
   const [blogContents, setBlogContents] = useState([]);
   const [totalReadTime, setTotalReadTime] = useState(0);
   const [bookMarkedPosts, setBookMarkedPosts] = useState([]);
@@ -58,4 +58,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogPost;

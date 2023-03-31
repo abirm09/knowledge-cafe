@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const QuestionAns = () => {
+const Blog = () => {
   const [answers, setAnswers] = useState([]);
   useEffect(() => {
     fetch("question.json")
@@ -32,4 +32,4 @@ const QuestionAns = () => {
   );
 };
 
-export default QuestionAns;
+export default Blog;

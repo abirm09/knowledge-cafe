@@ -13,6 +13,6 @@
   },
   {
     "question": "How Does React work?",
-    "answer": "React is a popular framework for building dynamic user interface.At present it is one of the most popular front-end library and also crosspatform techonology.;React is a component based library. It use virtual DOM to render components.When we render a react application it genarate a tree of virtual dom nodes that represents the ui.React use diff algorithm to get the difference of previous virsion to determine what needs to updated."
+    "answer": "React is a popular framework for building dynamic user interface.At present it is one of the most popular front-end library and also cross platform technology.;React is a component based library. It use virtual DOM to render components.When we render a react application it generate a tree of virtual dom nodes that represents the ui.React use diff algorithm to get the difference of previous version to determine what needs to updated."
   }
 ]
