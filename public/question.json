@@ -13,6 +13,6 @@
   },
   {
     "question": "How Does React work?",
-    "answer": "useEffect is mainly used for fetching data. But it can be use for many other purpose also. Some of them are:;It can be used to update animations,update styles or classes.And can be use to upadte page title dynamically.It also use to add or remove event listeners to the window,document or other elements in our applications."
+    "answer": "React is a popular framework for building dynamic user interface.At present it is one of the most popular front-end library and also crosspatform techonology.;React is a component based library. It use virtual DOM to render components.When we render a react application it genarate a tree of virtual dom nodes that represents the ui.React use diff algorithm to get the difference of previous virsion to determine what needs to updated."
   }
 ]
