@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import DisplayBlog from "../DisplayBlog/DisplayBlog";
 import TimeSpentAndBookmark from "../TimeSpentAndBookmark/TimeSpentAndBookmark";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Blog = () => {
   const [blogContents, setBlogContents] = useState([]);
@@ -20,13 +22,14 @@ const Blog = () => {
       bookMarkedPost => bookMarkedPost.id == id
     );
     if (isAlreadyAdded) {
-      console.log("you have added this before.");
+      toast("You have already added this post to your bookmark.");
     } else {
       const newBookmark = {
         id,
         name,
       };
       setBookMarkedPosts([...bookMarkedPosts, newBookmark]);
+      toast("Bookmark added successfully!");
     }
   };
   return (
@@ -51,6 +54,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
