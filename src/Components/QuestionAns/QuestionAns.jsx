@@ -15,11 +15,11 @@ const QuestionAns = () => {
       <div>
         {answers.map((answer, index) => {
           return (
-            <div className="ml-1" key={index}>
+            <div className="ml-1 mb-5" key={index}>
               <h2 className="font-bold text-2xl">
                 {index + 1}. {answer.question}
               </h2>
-              <div className="ml-3">
+              <div className="ml-3 md:ml-7">
                 {answer.answer.split(";").map((data, index) => (
                   <p key={index}>{data}</p>
                 ))}
