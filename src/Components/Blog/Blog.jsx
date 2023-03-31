@@ -17,7 +17,6 @@ const Blog = () => {
     setTotalReadTime(totalReadTime + time);
   };
   const bookMarkHandler = (id, name) => {
-    console.log(id, name);
     const isAlreadyAdded = bookMarkedPosts.find(
       bookMarkedPost => bookMarkedPost.id == id
     );

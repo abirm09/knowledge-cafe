@@ -21,18 +21,20 @@ const DisplayBlog = ({ blogContent, markAsReadHandler, bookMarkHandler }) => {
           <div>
             <div className="flex gap-5 items-center">
               <img
-                className="w-16 h-16 rounded-full"
+                className="w-12 h-12 md:w-16 md:h-16 rounded-full"
                 src={authorPicture}
                 alt={authorName}
               />
               <div>
-                <h2 className="font-bold text-2xl">{authorName}</h2>
-                <p className="font-semibold text-slate-600">{publishData}</p>
+                <h2 className="font-bold text-xl md:text-2xl">{authorName}</h2>
+                <p className="font-semibold text-slate-600 text-xs md:text-base">
+                  {publishData}
+                </p>
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-5 ml-20 md:ml-0">
-            <p className="font-medium text-slate-600 text-xl">
+          <div className="flex items-center gap-5 ml-16 md:ml-0">
+            <p className="font-medium text-slate-600 text-md md:text-xl">
               {readTime} min read
             </p>
             <button
@@ -44,10 +46,10 @@ const DisplayBlog = ({ blogContent, markAsReadHandler, bookMarkHandler }) => {
           </div>
         </div>
         <div>
-          <h2 className="font-bold text-4xl">{blogTitle}</h2>
+          <h2 className="font-bold text-2xl md:text-4xl">{blogTitle}</h2>
           <button
             onClick={() => markAsReadHandler(readTime)}
-            className="text-purple-500 font-semibold my-5 underline rounded-md p-4 transition-all hover:bg-slate-200 active:scale-90 active:bg-slate-300"
+            className="text-purple-500 font-semibold my-3 md:my-5 underline rounded-md p-2 md:p-4 transition-all hover:bg-slate-200 active:scale-90 active:bg-slate-300"
           >
             Mark as read
           </button>
