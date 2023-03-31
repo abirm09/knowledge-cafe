@@ -10,7 +10,9 @@ const TimeSpentAndBookmark = ({ totalReadTime, bookMarkedPosts }) => {
         </h2>
       </div>
       <div className="bg-slate-100 p-4 mt-5 rounded-lg">
-        <h2 className="font-bold text-2xl">Bookmarked Blogs : 8</h2>
+        <h2 className="font-bold text-2xl">
+          Bookmarked Blogs : {bookMarkedPosts.length}
+        </h2>
         <div className="mt-5">
           {bookMarkedPosts.map(bookMarkedPost => (
             <BookmarkedPosts
